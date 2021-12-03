@@ -9,6 +9,7 @@
     --grayish-blue: hsl(229, 7%, 55%);
     --dark-blue: hsl(228, 56%, 26%);
     --very-dark-blue: 229, 57%, 11%;
+    --icon-blue: hsl(228, 55%, 62%);
 
     --white: hsl(0, 0%, 100%);
 }
@@ -80,7 +81,14 @@ p {
     width: 48px;
     height: 48px;
     border-radius: 0.5rem;
+    color: var(--icon-blue);
     background-color: hsl(var(--very-dark-blue));
+    transition: color 0.15s;
+}
+
+.header__icons a:hover,
+.header__icons a:focus {
+    color: var(--white);
 }
 
 .storage__bottom {
